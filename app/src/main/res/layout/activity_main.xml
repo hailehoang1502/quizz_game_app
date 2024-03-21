@@ -26,7 +26,7 @@
             android:id="@+id/btn_popup_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="235dp"
+            android:layout_gravity="right"
             android:background="@drawable/ic_baseline_popup_menu" />
 
     </androidx.appcompat.widget.Toolbar>
@@ -47,23 +47,26 @@
     <FrameLayout
         android:id="@+id/rcv_listTopic_main"
         android:layout_width="match_parent"
-        android:layout_height="370dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginTop="20dp">
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
         android:layout_marginTop="10dp"
         android:background="@drawable/shadow1"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_play"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/no_border"
-            android:paddingTop="15dp"
+            android:paddingTop="5dp"
             android:text="Chơi"
             android:textSize="20sp"
             android:textAllCaps="false"
@@ -71,10 +74,11 @@
 
         <Button
             android:id="@+id/btn_his"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/no_border"
-            android:paddingTop="15dp"
+            android:paddingTop="5dp"
             android:text="Lịch sử"
             android:textSize="20sp"
             android:textAllCaps="false"

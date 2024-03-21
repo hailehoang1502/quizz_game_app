@@ -73,8 +73,6 @@ public class ResultActivity extends AppCompatActivity implements PopupMenu.OnMen
             topic = "Nghệ thuật";
         } else if (topicId.equals("math")) {
             topic = "Toán học";
-        } else {
-            topic = "Ngoại ngữ";
         }
 
         if (diffId.equals("easy")) {
